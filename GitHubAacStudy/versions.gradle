@@ -1,0 +1,30 @@
+ext.deps = [:]
+
+ext.kotlin_version = "1.5.21"
+ext.koin_version = '3.1.2'
+ext.retrofit_version = '2.9.0'
+
+
+/* versions */
+def versions = [:]
+versions.kotlin_version = '1.3.21'
+versions.lifecycle_version = '2.3.1'
+
+def deps = [:]
+
+/* Kotlin */
+def kotlin = [:]
+kotlin.plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin_version"
+kotlin.stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin_version"
+deps.kotlin = kotlin
+
+def lifecycle = [:]
+lifecycle.viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
+lifecycle.runtime   = "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycle_version"
+lifecycle.livedata  = "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle_version"
+lifecycle.compiler  = "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle_version"
+deps.lifecycle = lifecycle
+
+
+
+ext.deps = deps

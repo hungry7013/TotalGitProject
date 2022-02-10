@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GitHubFragment</string>
+
+    <string name="title">Fragment</string>
+    <string name="btn01">Type 01</string>
+    <string name="btn02">Type 02</string>
+
+    <string name="titleFragment01">Red</string>
+    <string name="titleFragment02">Green</string>
+    <string name="titleFragment03">Blue</string>
+    <string name="btnTop01">F-01</string>
+    <string name="btnTop02">F-02</string>
+    <string name="btnTop03">F-03</string>
+
+
+    <string name="btnPlus">Count Plus</string>
+
+</resources>
